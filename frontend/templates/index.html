@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bank App</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<h1>Bank System</h1>
+
+<!-- Register -->
+<h2>Register</h2>
+<input id="reg_username" placeholder="Username">
+<input id="reg_password" type="password" placeholder="Password">
+<button onclick="register()">Register</button>
+
+<!-- Login -->
+<h2>Login</h2>
+<input id="login_username" placeholder="Username">
+<input id="login_password" type="password" placeholder="Password">
+<button onclick="login()">Login</button>
+
+<!-- Create Account -->
+<h2>Create Account</h2>
+<input id="account_name" placeholder="Account Holder Name">
+<input id="initial_balance" placeholder="Initial Balance">
+<button onclick="createAccount()">Create</button>
+
+<!-- Check Balance -->
+<h2>Check Balance</h2>
+<input id="account_number" placeholder="Account Number">
+<button onclick="getBalance()">Get Balance</button>
+<p id="balance_result"></p>
+
+<!-- Transfer -->
+<h2>Transfer Money</h2>
+<input id="from_account" placeholder="From Account">
+<input id="to_account" placeholder="To Account">
+<input id="amount" placeholder="Amount">
+<button onclick="transfer()">Transfer</button>
+
+<script src="/static/js/script.js"></script>
+
+</body>
+</html>
